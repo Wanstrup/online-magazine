@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px; /*er et område omkring et element, og bestemmer afstanden mellem dette element og andre elementer*/
+    padding: 0px; /*er området inden i et element, bestemmer afstanden mellem elementets kant og dets indhold*/
+}
+
+.header {
+    background-color: #f2f2f2; /* detter er bare baggrund farven på headeren*/
+    padding: 10px;
+    text-align: left; /*bestemmer hvor på siden teksten skal stå, i dette tilfælde til venstre*/
+    position: relative; /*betyder det, at elementets position bliver justeret relativt til sin oprindelige placering i dokumentet*/
+}
+
+.login-buttons {
+    float: right; /* float betyder i dette tilfælde at min login knapper ligger til højre i headeren*/
+    margin-right: 10px;
+    margin-top: -50px; /* margin-top betyder at man gør margin på toppen større eller mindre*/
+}
+
+.navbars {
+    background-color: rgb(212, 30, 30);
+    overflow: hidden; /*bestemmer hvordan indholdet i et element skal håndteres, når det er større end det, der kan vises i elementets boks*/
+    display: flex; /*display flex ændrer visningen af et element til en fleksibel container*/
+    justify-content: center;
+
+}
+
+.navbars a {
+    display: inline-block;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none; /*tilføjer decorationer til teksten*/
+    white-space: nowrap;
+    line-height: 32px;
+
+    
+}
+
+.navbars a:hover {
+    background-color: #4c67f0;
+    color: white;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center; /* bruges til at centrere en boks f.eks*/
+	justify-content: center;
+	height: 100vh;
+	background-color: #f2f2f2;
+	padding: 20px; /*er området inden i et element, bestemmer afstanden mellem elementets kant og dets indhold*/
+}
+
+.image {
+	flex-basis: 50%;
+	max-width: 50%;
+	margin-right: 20px; /*er et område omkring et element, og bestemmer afstanden mellem dette element og andre elementer*/
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.info-box {
+	flex-basis: 40%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 520px;
+
+    position: absolute;
+}
+
+.search-bar {
+	flex-basis: 40%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -350px;
+    margin-right: 50px;
+    
+   
+}
+
+.search-input {
+	width: 200px; /*bredden på dit element*/
+	padding: 10px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	font-size: 16px;
+}
+
+.search-button {
+	width: 50px;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	outline: none;
+	font-size: 16px;
+}
+
+.icon-search {
+	width: 15px;
+	height: 15px;
+	fill: #fff;
+}   
+
+.footer {
+    background-color: rgb(212, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
