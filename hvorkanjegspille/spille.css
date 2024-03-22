@@ -4,7 +4,7 @@ body {
     padding: 0px; /*er området inden i et element, bestemmer afstanden mellem elementets kant og dets indhold*/
 }
 
-.header {
+header {
     background-color: #f2f2f2; /* detter er bare baggrund farven på headeren*/
     padding: 10px;
     text-align: left; /*bestemmer hvor på siden teksten skal stå, i dette tilfælde til venstre*/
@@ -109,7 +109,7 @@ body {
 	fill: #fff;
 }   
 
-.footer {
+footer {
     background-color: rgb(212, 30, 30);
     color: white;
     text-align: center;
